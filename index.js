@@ -14,8 +14,8 @@ function nestArr(jumlahRow, jumlahCol){
 
 function generateAlphabet(){
   let lowerCaseAlphabet = 'abcdefghijklmnopqrstuvwxyz';
-  let index = Math.round(Math.random()*lowerCaseAlphabet.length);
-  return lowerCaseAlphabet[index-1];
+  let index = Math.round(Math.random()*(lowerCaseAlphabet.length-1));
+  return lowerCaseAlphabet[index];
 }
 
 console.log(nestArr(4, 6));
